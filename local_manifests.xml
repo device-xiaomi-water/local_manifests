@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Remotes -->
+  <remote name="water" fetch="https://github.com/device-xiaomi-water" revision="15" />
+  <remote name="LOS" fetch="https://github.com/LineageOS" revision="lineage-22.1" />
+
+  <!-- Device Trees -->
+  <project path="device/xiaomi/water" name="android_device_xiaomi_water" remote="water" />
+  
+  <!-- Vendor-ims -->
+  <project path="vendor/xiaomi/ims-water" name="proprietary_vendor_xiaomi_ims-water" remote="water" />
+
+  <!-- Vendor -->
+  <project path="vendor/xiaomi/water" name="proprietary_vendor_xiaomi_water" remote="water" />
+
+  <!-- Hardware -->
+  <project path="hardware/mediatek" name="android_hardware_mediatek" remote="LOS" />
+
+</manifest>
